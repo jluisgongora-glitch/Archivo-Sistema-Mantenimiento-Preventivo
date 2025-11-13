@@ -16,7 +16,12 @@ public class HerramientaElectrica extends Maquinaria {
     
     @Override
     public int getIntervaloMantenimiento() {
-        return 50; // 50 horas
+        return 50;
+    }
+    
+    @Override
+    public String getTipoServicio() {
+        return "Mantenimiento de Herramientas";
     }
     
     @Override

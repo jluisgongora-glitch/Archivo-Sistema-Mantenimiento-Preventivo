@@ -1,7 +1,7 @@
 
 package com.mycompany.sistemamantenimientopreventivo;
 
-//Agregacion
+//Agregacion 
 public class Tecnico {
     
     private String id;
@@ -19,6 +19,7 @@ public class Tecnico {
     public String getId() { return id; }
     public String getNombre() { return nombre; }
     public String getEspecialidad() { return especialidad; }
+    public int getMantenimientosRealizados() { return mantenimientosRealizados; }
     
     public void realizarMantenimiento(Maquinaria maquina) {
         System.out.println("\n>>> Técnico " + nombre + " realizando mantenimiento...");
@@ -27,7 +28,6 @@ public class Tecnico {
         System.out.println(">>> Mantenimiento completado!\n");
     }
     
-    // Polimorfismo: Sobrecarga
     public void realizarMantenimiento(Maquinaria maquina, String observaciones) {
         realizarMantenimiento(maquina);
         System.out.println("Observaciones: " + observaciones);

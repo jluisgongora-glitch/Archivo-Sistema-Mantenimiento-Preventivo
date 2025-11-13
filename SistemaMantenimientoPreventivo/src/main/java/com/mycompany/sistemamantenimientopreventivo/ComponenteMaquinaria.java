@@ -6,7 +6,7 @@ public class ComponenteMaquinaria {
     
     private String nombre;
     private String codigo;
-    private int vidaUtil; // horas
+    private int vidaUtil;
     
     public ComponenteMaquinaria(String nombre, String codigo, int vidaUtil) {
         this.nombre = nombre;

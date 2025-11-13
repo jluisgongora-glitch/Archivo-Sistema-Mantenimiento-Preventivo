@@ -1,22 +1,27 @@
 
 package com.mycompany.sistemamantenimientopreventivo;
 
-//Clase heredada de maquinaria y implenta un metodo de la clase mantenible
+//Clase heredada de maquinaria e implenta un metodo de la clase mantenible
 public class MaquinariaIndustrial  extends Maquinaria implements Reportable {
-    
+   
     private String tipoIndustria;
     private int capacidadProduccion;
     
     public MaquinariaIndustrial(String id, String nombre, String ubicacion, 
                                 String tipoIndustria, int capacidadProduccion) {
-        super(id, nombre, ubicacion); // Llamada al constructor de la superclase
+        super(id, nombre, ubicacion);
         this.tipoIndustria = tipoIndustria;
         this.capacidadProduccion = capacidadProduccion;
     }
     
     @Override
     public int getIntervaloMantenimiento() {
-        return 200; // 200 horas
+        return 200;
+    }
+    
+    @Override
+    public String getTipoServicio() {
+        return "Mantenimiento Industrial";
     }
     
     @Override
@@ -37,7 +42,6 @@ public class MaquinariaIndustrial  extends Maquinaria implements Reportable {
                "Horas de uso: " + getHorasUso();
     }
     
-    // Polimorfismo: Sobreescritura
     @Override
     public void mostrarInfo(boolean detallado) {
         super.mostrarInfo(detallado);

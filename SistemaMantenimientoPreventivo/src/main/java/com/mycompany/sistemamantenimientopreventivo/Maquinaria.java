@@ -44,6 +44,7 @@ abstract public class Maquinaria implements Mantenible {
     
     // Método abstracto que debe ser implementado por subclases
     public abstract int getIntervaloMantenimiento();
+    public abstract String getTipoServicio();
     
     // Implementación de interfaz Mantenible
     @Override

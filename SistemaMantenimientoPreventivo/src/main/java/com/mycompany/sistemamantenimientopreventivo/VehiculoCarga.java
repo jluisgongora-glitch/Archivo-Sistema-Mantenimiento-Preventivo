@@ -17,7 +17,12 @@ public class VehiculoCarga extends Maquinaria implements Reportable {
     
     @Override
     public int getIntervaloMantenimiento() {
-        return 100; // 100 horas
+        return 100;
+    }
+    
+    @Override
+    public String getTipoServicio() {
+        return "Mantenimiento Vehicular";
     }
     
     @Override
