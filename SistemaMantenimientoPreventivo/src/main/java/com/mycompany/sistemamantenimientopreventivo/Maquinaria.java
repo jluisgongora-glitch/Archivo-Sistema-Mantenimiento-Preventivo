@@ -64,7 +64,7 @@ abstract public class Maquinaria implements Mantenible {
             System.out.println("Nombre: " + nombre);
             System.out.println("Ubicacion: " + ubicacion);
             System.out.println("Horas de uso: " + horasUso);
-            System.out.println("Requiere mantenimiento: " + (requiereMantenimiento() ? "Sí" : "No"));
+            System.out.println("Requiere mantenimiento: " + (requiereMantenimiento() ? "Si" : "No"));
         } else {
             mostrarInfo();
         }

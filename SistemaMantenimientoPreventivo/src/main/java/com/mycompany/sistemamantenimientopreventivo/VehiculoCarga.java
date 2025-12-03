@@ -30,7 +30,7 @@ public class VehiculoCarga extends Maquinaria implements Reportable {
         System.out.println(" Realizando mantenimiento vehicular en: " + getNombre());
         System.out.println("- Cambio de aceite");
         System.out.println("- Revision de frenos");
-        System.out.println("- Inspeccion de neumáticos");
+        System.out.println("- Inspeccion de neumaticos");
         reiniciarContadorMantenimiento();
     }
     
